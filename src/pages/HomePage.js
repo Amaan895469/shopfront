@@ -22,9 +22,7 @@ function HomePage() {
       );
 
       const data = await response.json();
-      navigate(
-        `${process.env.REACT_APP_BACKEND_URL}/products?customerId=${data.customerId}`
-      );
+      navigate(`/products?customerId=${data.customerId}`);
     } catch (error) {
       console.error("Error creating customer:", error);
     }

@@ -10,6 +10,7 @@ function ProductsPage() {
   const [searchParams] = useSearchParams();
   const customerId = searchParams.get("customerId");
   const navigate = useNavigate();
+  
   useEffect(() => {
     async function fetchProducts() {
       try {
@@ -39,7 +40,7 @@ function ProductsPage() {
       const data = await response.json();
       setCartItems(data.customer.cart);
       setTotal(data.total);
-      setCustomerName(data.customer.name); // Add this line to set the customer name
+      setCustomerName(data.customer.name); 
     } catch (error) {
       console.error("Error fetching cart data:", error);
     }
