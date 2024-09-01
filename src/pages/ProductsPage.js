@@ -80,7 +80,9 @@ function ProductsPage() {
 
   // Navigate to the cart page when the cart icon is clicked
   const goToCart = () => {
-    navigate(`/customer/cart?customerId=${customerId}`);
+    navigate(
+      `https://shopfront-ks3zz24u8-amaan895469s-projects.vercel.app/customer/cart?customerId=${customerId}`
+    );
   };
 
   return (

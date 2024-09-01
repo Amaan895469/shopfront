@@ -110,7 +110,7 @@ function Cart() {
 
       const result = await response.json();
       alert(result.message);
-      navigate("/"); // This will route to the homepage
+      navigate("https://shopfront-ks3zz24u8-amaan895469s-projects.vercel.app"); // This will route to the homepage
     } catch (error) {
       console.error("Error during checkout:", error);
     }
