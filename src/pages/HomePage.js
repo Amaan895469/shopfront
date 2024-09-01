@@ -22,6 +22,7 @@ function HomePage() {
       );
 
       const data = await response.json();
+       console.log()
       navigate(`/products?customerId=${data.customerId}`);
     } catch (error) {
       console.error("Error creating customer:", error);
