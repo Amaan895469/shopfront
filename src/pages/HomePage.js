@@ -22,7 +22,7 @@ function HomePage() {
       );
 
       const data = await response.json();
-      navigate(`/products?customerId=${data.customerId}`);
+      navigate(`/product?customerId=${data.customerId}`);
     } catch (error) {
       console.error("Error creating customer:", error);
     }
