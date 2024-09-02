@@ -22,10 +22,8 @@ function HomePage() {
       );
 
       const data = await response.json();
-       console.log()
-      navigate(
-        `https://shopfront-ks3zz24u8-amaan895469s-projects.vercel.app/products?customerId=${data.customerId}`
-      );
+      console.log();
+      navigate(`/products?customerId=${data.customerId}`);
     } catch (error) {
       console.error("Error creating customer:", error);
     }
