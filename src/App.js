@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ProductsPage from "./pages/ProductsPage";
-import Cart from "./components/cart";
+import Cart from "./pages/cart";
 
 function App() {
   const customerId = "customer_id"; // Replace with actual customer ID logic
@@ -25,4 +25,3 @@ function App() {
 }
 
 export default App;
-  
