@@ -22,7 +22,7 @@ function Cart() {
         const data = await response.json();
         setCartItems(data.customer.cart);
         setTotal(data.total);
-        setCustomerName(data.customer.name); // Ensure this line sets the customer name
+        setCustomerName(data.customer.name); 
       } catch (error) {
         console.error("Error fetching cart data:", error);
       }
@@ -85,7 +85,7 @@ function Cart() {
       );
 
       const data = await response.json();
-      setTotal(data.total); // Update the total after applying the discount
+      setTotal(data.total); 
       alert(data.message || "Discount applied successfully!");
     } catch (error) {
       console.error("Error applying discount:", error);
@@ -110,7 +110,7 @@ function Cart() {
 
       const result = await response.json();
       alert(result.message);
-      navigate("https://shopfront-ks3zz24u8-amaan895469s-projects.vercel.app"); // This will route to the homepage
+      navigate("/"); 
     } catch (error) {
       console.error("Error during checkout:", error);
     }
